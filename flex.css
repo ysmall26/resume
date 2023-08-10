@@ -1,0 +1,76 @@
+/*
+Flex property is a shorthand property for flex-grow, flex-shrink, flex-basis.
+It sets the flexible length on flexible items. 
+If the element isnt flecible than the flex property will not work.
+
+Property Values
+ 
+flex-grow: a number specifying how much the item will grow relative to the rest of the flexible items.
+flex-shrink: a number specifying how much the item will shrink relative to the rest of the flexible items.
+flex-basis: the length of the item. Legal values-"auto","inherit", or a number followed by "%", "px", "em" or any other length unit
+
+Example:
+    .flex-container{ 
+        display:flex;
+        flex-wrap:wrap;
+        font-size:30px;
+        text-align:center;
+    }
+
+    .flex-item-left{
+        background color: dodgerblue;
+        padding:10px;
+        flex:50%;
+    }
+
+Flex-Basis Property
+    Property Values
+     -number: a length unit, or percentage, specifying the initial length of the flexible items
+     -auto: the length is equal to the length of the flexible item. if the item has no length specified,the length will be according to its content
+     -initial: sets this property to its default value
+     -inherit: inherits this property from its parent element
+
+     Example:
+       #main div:nth-of-type(2) {
+        flex-basis: 100px; 
+
+Flex-Direction
+    Property Values
+     -row: the flexible items are displayed horizontally
+     -row-reverse: same as row, but in reverse order
+     -clolumn: the flexible items are displayed vertically
+     -column-reverse: same as column but in reverse order
+
+
+Flex-Flow
+    Property Values
+     -flex-direction:row, row-reverse, column, column-reverse, initial, inherit
+     -flex-wrap: nowrap, wrap, wrap-reverse, initial, inherit
+
+Flex-Grow
+    Property Values
+     -number:a number specifying how much the item will grow relative to the rest of the flexible items. 
+     -inital:sets this property to its default value
+     -inherit: inherits this property from its parent element
+
+Flex-Shrink
+    Property Values
+     -number: a number specifying how much the item will shrink relative to the rest of the flexible items
+     -intital
+     -inherit
+
+Flex-Wrap
+    Property Values
+     -nowrap: specifies that the flexible items will not wrap
+     -wrap: specifies that the flexible items will wrap if necessary
+     -wrap-reverse: specifies that the flexible items will wrap, if necessary in reverse order
+     -initial
+     -inherit
+
+
+
+
+
+
+
+

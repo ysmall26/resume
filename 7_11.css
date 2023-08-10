@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: rgb(203, 230, 240);
+}
+
+.main-container {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    margin-top: 38px;
+    padding: 5px;
+    padding-bottom: 30px;
+}
+
+.name-container {
+    height: 310px;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+div img {
+
+    width: 30%;
+    border-radius: 50%;
+}
+
+h1,
+h4 {
+    text-align: center;
+    padding: 10px;
+
+}
+
+h1 {
+    font-weight: 400;
+    color: rgb(85, 83, 83);
+
+}
+
+h4 {
+    color: grey;
+    font-size: 1200;
+    font-weight: lighter;
+    font-weight: 300;
+}
+
+
+div h2 {
+    border-bottom: 1px solid white;
+    padding: 25px 0px;
+    color: white;
+    font-weight: 300;
+}
+
+.about {
+    height: 200px;
+    background-color: rgb(90, 179, 226);
+    padding: 40px 30px 30px;
+    line-height: 30px;
+}
+
+.work {
+    height: 280px;
+    background-color: rgb(93, 157, 240);
+    padding: 25px;
+}
+
+.contact {
+    height: 280px;
+    background-color: rgb(60, 132, 226);
+    padding: 25px 30px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+
+p,
+li {
+    font-size: 18px;
+    color: white;
+    font-weight: lighter;
+    text-align: left;
+    padding-top: 20px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: " ➡️  ";
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: rgb(60, 132, 226);
+    color: white;
+    border: none;
+    border: 1px solid white;
+    border-radius: 7px;
+    width: 100px;
+    padding: 8px 0px;
+    margin: 2px;
+    margin-top: 30px;
+}
+
+
+@media screen and (min-width: 750px) {
+    .main-container {
+        padding: 60px;
+        max-width: 650px;
+    }
+
+    .about .work .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    div h2 {
+        border-bottom: none;
+        width: 30%;
+        justify-content: left;
+        display: inline;
+
+    }
+
+    p,
+    li,
+    .social {
+
+        border-left: 1px solid white;
+        margin-left: 200px;
+        padding-left: 20px;
+        justify-content: right;
+        width: 70%;
+    }
+
+    .social button {
+        margin-right: 100px;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+    .main-container {
+        width: 800px;
+        padding: 100px;
+    }
+}
+
+
+    }
+    h2{
+        border-bottom: none;
+        text-align: left;
+    }
+     p,li {
+        text-align: left;
+        border-left: 1px solid white;
+        margin-left: 300px;
+        padding-left: 20px;
+    }
+    .about{
+        height: 100px;
+
+        padding: 25px;
+    }
+     
+    .work{
+        height: 230px; 
+
+        padding: 25px;
+    }
+    .contact{
+        height: 230px;
+    
+        padding: 25px;
+        
+    }
